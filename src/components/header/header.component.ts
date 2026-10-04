@@ -8,13 +8,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     <header class="header" [class.header--scrolled]="scrolled()">
       <div class="container header__inner">
         <a routerLink="/" class="header__logo" aria-label="Главная">
-          <span class="header__logo-mark">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <rect width="28" height="28" rx="8" fill="#2549d6" />
-              <path d="M8 20V8l6 8 6-8v12" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </span>
-          <span class="header__logo-text">Иван Иванов</span>
+          <span class="header__logo-text">Анастасия Денисова</span>
         </a>
 
         <nav class="header__nav" [class.header__nav--open]="menuOpen()">

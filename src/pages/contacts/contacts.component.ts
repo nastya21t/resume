@@ -44,17 +44,12 @@ import { Component } from '@angular/core';
 export class ContactsComponent {
   contacts = [
     {
-      title: 'Email', value: 'ivan@example.com', href: 'mailto:ivan@example.com',
-      bg: 'var(--c-primary-50)',
-      icon: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#2549d6" stroke-width="2"/><path d="M3 7l9 6 9-6" stroke="#2549d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
-    },
-    {
-      title: 'Telegram', value: '@username', href: 'https://t.me/username',
+      title: 'Telegram', value: '@nastyatotot', href: 'https://t.me/nastyatotot',
       bg: 'var(--c-accent-50)',
       icon: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M21 4L3 11l5 2 2 6 3-4 5 3 3-14z" stroke="#10a574" stroke-width="2" stroke-linejoin="round"/></svg>',
     },
     {
-      title: 'GitHub', value: 'github.com/твой-логин', href: 'https://github.com/твой-логин',
+      title: 'GitHub', value: 'github.com/nastya21totot-a11y', href: 'https://github.com/nastya21totot-a11y',
       bg: '#f3e8ff',
       icon: '<svg width="26" height="26" viewBox="0 0 24 24" fill="#7c3aed"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>',
     },

@@ -10,11 +10,7 @@ import { RouterLink } from '@angular/router';
         <div class="footer__top">
           <div class="footer__brand">
             <a routerLink="/" class="footer__logo">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <rect width="28" height="28" rx="8" fill="#2549d6" />
-                <path d="M8 20V8l6 8 6-8v12" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-              <span>Иван Иванов</span>
+              <span>Анастасия Денисова</span>
             </a>
             <p class="footer__tagline">Портфолио студента и разработчика. Проекты, курсы, олимпиады — всё в одном месте.</p>
           </div>
@@ -32,19 +28,17 @@ import { RouterLink } from '@angular/router';
               <a routerLink="/about">Обо мне</a>
               <a routerLink="/practice">Практика</a>
               <a routerLink="/contacts">Контакты</a>
-              <a href="assets/docs/resume.pdf" target="_blank" rel="noopener">Резюме (PDF)</a>
             </div>
             <div class="footer__col">
               <h4>Ссылки</h4>
-              <a href="https://github.com/твой-логин" target="_blank" rel="noopener">GitHub</a>
-              <a href="https://t.me/username" target="_blank" rel="noopener">Telegram</a>
-              <a href="mailto:ivan@example.com">Email</a>
+              <a href="https://github.com/nastya21totot-a11y" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://t.me/nastyatotot" target="_blank" rel="noopener">Telegram</a>
             </div>
           </div>
         </div>
 
         <div class="footer__bottom">
-          <p>&copy; 2026 Иван Иванов. Все права защищены.</p>
+          <p>&copy; 2026 Анастасия Денисова. Все права защищены.</p>
         </div>
       </div>
     </footer>

@@ -15,7 +15,7 @@ import { RouterLink } from '@angular/router';
             Открыт к стажировкам и проектам
           </span>
           <h1 class="hero__title">
-            Привет! Я <span class="hero__title-accent">Иван Иванов</span>
+            Привет! Я <span class="hero__title-accent">Анастасия Денисова</span>
           </h1>
           <p class="hero__subtitle">
             Студент, разработчик и участник олимпиад. Собираю здесь свои проекты,
@@ -74,7 +74,7 @@ import { RouterLink } from '@angular/router';
         <div class="cta">
           <div class="cta__glow"></div>
           <h2 class="cta__title">Давайте сотрудничать</h2>
-          <p class="cta__subtitle">Открыт к стажировкам, кейсам и интересным проектам.</p>
+          <p class="cta__subtitle">Открыта к стажировкам, кейсам и интересным проектам.</p>
           <a routerLink="/contacts" class="btn btn--primary btn--lg">Связаться</a>
         </div>
       </div>
@@ -146,42 +146,36 @@ export class HomeComponent {
   sections = [
     {
       title: 'Олимпиады',
-      desc: 'ArtMasters, ИТ-Планета, Траектория будущего, Большие вызовы.',
       link: '/olympiads',
       bg: 'var(--c-primary-50)',
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 21h8m-4-3v3M7 4h10v5a5 5 0 01-10 0V4z" stroke="#2549d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 5h3v2a3 3 0 01-3 3M7 5H4v2a3 3 0 003 3" stroke="#2549d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     },
     {
       title: 'Курсы',
-      desc: 'VK Education, Яндекс Лицей, Сбер, Stepik, Yandex Cloud, 1С.',
       link: '/courses',
       bg: 'var(--c-accent-50)',
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3l10 5-10 5L2 8l10-5z" stroke="#10a574" stroke-width="2" stroke-linejoin="round"/><path d="M6 10v5c0 2 3 4 6 4s6-2 6-4v-5" stroke="#10a574" stroke-width="2" stroke-linecap="round"/></svg>',
     },
     {
       title: 'Мероприятия',
-      desc: 'AI Dev Day, Я 💛 Фронтенд, IT Purple Conf, GoCloud, экскурсии.',
       link: '/events',
       bg: '#f3e8ff',
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="#7c3aed" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/></svg>',
     },
     {
       title: 'Проекты',
-      desc: 'Курсовые, кейсы VK, редизайн и СКУД «Цифровые решения».',
       link: '/projects',
       bg: 'var(--c-warning-50)',
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 7l4-4h10l4 4v10l-4 4H7l-4-4V7z" stroke="#e08e00" stroke-width="2" stroke-linejoin="round"/><path d="M8 12h8M8 16h5" stroke="#e08e00" stroke-width="2" stroke-linecap="round"/></svg>',
     },
     {
       title: 'Практика',
-      desc: 'Стажировки, документы, задания от «Цифровых решений».',
       link: '/practice',
       bg: 'var(--c-primary-50)',
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="13" rx="2" stroke="#2549d6" stroke-width="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" stroke="#2549d6" stroke-width="2"/></svg>',
     },
     {
       title: 'Обо мне',
-      desc: 'Общественная деятельность, соцсети, контакты, резюме.',
       link: '/about',
       bg: 'var(--c-accent-50)',
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#10a574" stroke-width="2"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7" stroke="#10a574" stroke-width="2" stroke-linecap="round"/></svg>',

@@ -37,14 +37,6 @@ import { Component } from '@angular/core';
             </ul>
           </div>
         </div>
-
-        <div class="card" style="margin-top: 24px;">
-          <h3 class="about__title">Резюме</h3>
-          <p style="color: var(--text-muted); margin-bottom: 16px;">
-            Полное резюме доступно в PDF — со всеми проектами, сертификатами и опытом.
-          </p>
-          <a href="assets/docs/resume.pdf" target="_blank" rel="noopener" class="btn btn--primary">Открыть резюме (PDF)</a>
-        </div>
       </div>
     </section>
   `,
@@ -63,13 +55,8 @@ import { Component } from '@angular/core';
   `],
 })
 export class AboutComponent {
-  skills = ['Python', 'TypeScript', 'JavaScript', 'SQL', 'Django', 'Angular', 'Laravel', 'PostgreSQL', 'SQLite', 'Docker', 'Git', 'Figma'];
+  skills = ['Python', 'TypeScript', 'JavaScript', 'SQL', 'Django', 'Angular', 'Laravel', 'PostgreSQL', 'SQLite', 'Git', 'Figma'];
   social = [
-    'Реакции в канале «Max» (скриншоты)',
-    'Видео для дня открытых дверей техникума',
-    'Интервью с «Ред Софт»',
-    '«Семейная книга памяти» (оператор/монтаж/презентация)',
-    'Онлайн-семинары по финансовой грамотности',
-    'Открывая Россию заново',
+    'Реакции в канале «Max»',
   ];
 }
