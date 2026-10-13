@@ -1,5 +1,22 @@
 import { Component } from '@angular/core';
 
+interface PracticeLink {
+  label: string;
+  href: string;
+}
+
+interface PracticeItem {
+  tag: string;
+  year: string;
+  title: string;
+  desc: string;
+  points: string[];
+  links: PracticeLink[];
+  image: string;
+  bg: string;
+  color: string;
+}
+
 @Component({
   selector: 'app-practice',
   template: `
@@ -32,16 +49,22 @@ import { Component } from '@angular/core';
                   <span class="item-card__year">{{ p.year }}</span>
                 </div>
                 <p class="item-card__desc">{{ p.desc }}</p>
-                <ul class="practice__list">
-                  @for (l of p.points; track l) {
-                    <li>{{ l }}</li>
-                  }
-                </ul>
-                <div class="item-card__links">
-                  @for (link of p.links; track link.href) {
-                    <a [href]="link.href" target="_blank" rel="noopener">{{ link.label }} →</a>
-                  }
-                </div>
+
+                @if (p.points.length > 0) {
+                  <ul class="practice__list">
+                    @for (l of p.points; track l) {
+                      <li>{{ l }}</li>
+                    }
+                  </ul>
+                }
+
+                @if (p.links.length > 0) {
+                  <div class="item-card__links">
+                    @for (link of p.links; track link.href) {
+                      <a [href]="link.href" target="_blank" rel="noopener">{{ link.label }} →</a>
+                    }
+                  </div>
+                }
               </div>
             </div>
           }
@@ -60,13 +83,17 @@ import { Component } from '@angular/core';
   `],
 })
 export class PracticeComponent {
-  items = [
+  items: PracticeItem[] = [
     {
-      tag: 'Практика', year: '2026',
+      tag: 'Практика',
+      year: '2026',
       title: 'Практика в судебном',
       desc: 'Работа с документами на месте практики',
+      points: [],
+      links: [],
       image: 'images/practice/sud.jpg',
-      bg: 'var(--c-accent-50)', color: 'var(--c-accent-700)',
+      bg: 'var(--c-accent-50)',
+      color: 'var(--c-accent-700)',
     },
   ];
 }

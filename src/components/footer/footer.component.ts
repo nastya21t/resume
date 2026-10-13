@@ -20,7 +20,6 @@ import { RouterLink } from '@angular/router';
               <h4>Разделы</h4>
               <a routerLink="/olympiads">Олимпиады</a>
               <a routerLink="/courses">Курсы</a>
-              <a routerLink="/events">Мероприятия</a>
               <a routerLink="/projects">Проекты</a>
             </div>
             <div class="footer__col">

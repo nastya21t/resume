@@ -1,5 +1,13 @@
 import { Component } from '@angular/core';
 
+interface Course {
+  vendor: string;
+  title: string;
+  desc: string;
+  link: string;
+  image: string;
+}
+
 @Component({
   selector: 'app-courses',
   template: `
@@ -36,30 +44,29 @@ import { Component } from '@angular/core';
           }
         </div>
 
-        <div class="grid grid--3">
-          @for (c of optional; track c) {
-            <div class="card item-card">
-              <div class="item-card__image">
-                @if (c.image) {
-                  <img [src]="c.image" [alt]="c.title" loading="lazy" />
-                } @else {
-                  <div class="item-card__placeholder"><span>Нет фото</span></div>
-                }
+        @if (optional.length > 0) {
+          <h2 class="section-title" style="font-size: 24px; margin-bottom: 24px;">Дополнительные</h2>
+          <div class="grid grid--3">
+            @for (c of optional; track c) {
+              <div class="card item-card">
+                <div class="item-card__image">
+                  @if (c.image) {
+                    <img [src]="c.image" [alt]="c.title" loading="lazy" />
+                  } @else {
+                    <div class="item-card__placeholder"><span>Нет фото</span></div>
+                  }
+                </div>
+                <div class="item-card__body">
+                  <div class="course__vendor course__vendor--alt">{{ c.vendor }}</div>
+                  <h3 class="item-card__title">{{ c.title }}</h3>
+                  <p class="item-card__desc">{{ c.desc }}</p>
+                  @if (c.link) { <a [href]="c.link" target="_blank" rel="noopener" class="item-card__link">Перейти →</a> }
+                </div>
               </div>
-              <div class="item-card__body">
-                <div class="course__vendor course__vendor--alt">{{ c.vendor }}</div>
-                <h3 class="item-card__title">{{ c.title }}</h3>
-                <p class="item-card__desc">{{ c.desc }}</p>
-                @if (c.link) { <a [href]="c.link" target="_blank" rel="noopener" class="item-card__link">Перейти →</a> }
-              </div>
-            </div>
-          }
-        </div>
+            }
+          </div>
+        }
 
-        <div class="course__form-block">
-          <p><strong>Форма для сертификатов:</strong> <a href="https://forms.gle/mYgbu4djxwdC8okp9" target="_blank" rel="noopener">forms.gle/mYgbu4djxwdC8okp9</a></p>
-          <p><strong>Проверка:</strong> <a href="https://clck.ru/3RgsJc" target="_blank" rel="noopener">clck.ru/3RgsJc</a></p>
-        </div>
       </div>
     </section>
   `,
@@ -76,8 +83,10 @@ import { Component } from '@angular/core';
   `],
 })
 export class CoursesComponent {
-  required = [
+  required: Course[] = [
     { vendor: 'VK', title: 'VK Education', desc: 'Один из курсов платформы VK Education.', link: 'https://education.vk.company/students', image: 'images/courses/vk.png' },
     { vendor: 'Сбер', title: 'Сбер Университет', desc: 'Курс от Сбер Университета.', link: 'https://sberuniversity.ru/', image: 'images/courses/sber.jpg' },
   ];
+
+  optional: Course[] = [];
 }

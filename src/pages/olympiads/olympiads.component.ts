@@ -1,5 +1,15 @@
 import { Component } from '@angular/core';
 
+interface Olympiad {
+  title: string;
+  desc: string;
+  required: boolean;
+  year: string;
+  image: string;
+  site: string;
+  form: string;
+}
+
 @Component({
   selector: 'app-olympiads',
   template: `
@@ -44,7 +54,6 @@ import { Component } from '@angular/core';
                 <div class="item-card__links">
                   @if (o.site) { <a [href]="o.site" target="_blank" rel="noopener">Сайт →</a> }
                   @if (o.form) { <a [href]="o.form" target="_blank" rel="noopener">Форма →</a> }
-                  @if (o.github) { <a [href]="o.github" target="_blank" rel="noopener">GitHub →</a> }
                 </div>
               </div>
             </div>
@@ -61,14 +70,14 @@ import { Component } from '@angular/core';
   `],
 })
 export class OlympiadsComponent {
-  items = [
+  items: Olympiad[] = [
     {
       title: 'ArtMasters',
       desc: 'Компетенция и этапы участия, скриншоты теста и портфолио в репозитории.',
       required: true, year: '2026',
       image: 'images/olympiads/artmasters.jpg',
       site: 'https://artmasters.ru/',
-      form: 'https://forms.gle/uMnafPJsZdsZuUjdA',
+      form: '',
     },
     {
       title: 'ИТ-Планета',
@@ -76,15 +85,15 @@ export class OlympiadsComponent {
       required: true, year: '2026',
       image: 'images/olympiads/planet.jpg',
       site: 'https://it-planet.org/',
-      form: 'https://forms.gle/Hb6gnmi25okyWFjeA',
+      form: '',
     },
     {
       title: 'Траектория будущего',
-      desc: 'Тест по Траектории будущего ',
+      desc: 'Тест по Траектории будущего',
       required: true, year: '2026',
       image: 'images/olympiads/TRAEKTORIYA.jpg',
       site: 'https://tbolimpiada.ru/#nomination',
-      form: 'https://forms.gle/nLFypXKFjdRU2t5d9',
+      form: '',
     },
   ];
 }

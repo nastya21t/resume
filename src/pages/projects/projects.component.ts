@@ -64,6 +64,7 @@ export class ProjectsComponent {
       desc: 'Веб-приложение для учёта документов: авторизация, роли, отчёты, диаграммы.',
       tag: 'Курсовая', year: '2026',
       stack: ['Django'],
+      repo: 'https://github.com/nastya21t/siteDAA/tree/main', demo: '',
       image: 'images/projects/dok.png',
       bg: 'var(--c-primary-50)', color: 'var(--c-primary-700)',
     },

@@ -15,7 +15,6 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
           <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Главная</a>
           <a routerLink="/olympiads" routerLinkActive="active" (click)="closeMenu()">Олимпиады</a>
           <a routerLink="/courses" routerLinkActive="active" (click)="closeMenu()">Курсы</a>
-          <a routerLink="/events" routerLinkActive="active" (click)="closeMenu()">Мероприятия</a>
           <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Проекты</a>
           <a routerLink="/practice" routerLinkActive="active" (click)="closeMenu()">Практика</a>
           <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">Обо мне</a>
